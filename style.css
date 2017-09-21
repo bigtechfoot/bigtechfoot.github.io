@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+  padding: 1em;
+}
+
+#binder {
+  position: relative;
+  background: url(Binder.jpg) no-repeat;
+  background-size: 117%;
+  background-position: 49% 10%;
+  width: 100%;
+  padding-top: 60%;
+}
+
+.page {
+  width: 40%;
+  padding-top: 50%;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  background: white;
+  border: solid grey 1px;
+}
+
+.content {
+  position: absolute;
+  top:5%;
+  left:10%;
+  right:10%;
+  bottom:5%;
+}
+
+h2 {
+  text-align:center;
+  border-bottom: black solid 5px;
+  margin-top:0;
+}
