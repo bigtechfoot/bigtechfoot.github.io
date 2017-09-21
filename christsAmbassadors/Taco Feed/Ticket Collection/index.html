@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Taco Feed Ticket Counter</title>
+    
+    <meta charset="utf-8" />
+    <meta name="author" content="Steven Habroun"/>
+    <meta name="description" content="Counting Tickets" />
+    
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="pure-release-0.6.0/pure-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  </head>
+  <body>
+    <img id="back" alt="Background Image" src="BackgroundImage2.jpg" />
+    <div class="pure-g">
+      <p class="pure-u-1" style="padding-bottom:14%;margin-bottom:0;"></p>
+      <h1 class="pure-u-1" style="padding-top:0;margin-top:0;">Taco Feed Ticket Collection</h1>
+      
+      <div class="pure-u-3-24"></div>
+      <div class="pure-u-8-24 maindiv">
+        <h2 class="pure-u-1">Adults</h2>
+        <h3 class="pure-u-1-3">Dine in:</h3>
+        <h3 class="pure-u-1-2" id="inA"></h3>
+        <button class="pure-u-10-24 pure-button" id="inAp"><b>+1</b></button>
+        <div class="pure-u-1-12"></div>
+        <button class="pure-u-10-24 pure-button" id="inA-"><b>-1</b></button>
+        <h3 class="pure-u-1-3">Take out:</h3>
+        <h3 class="pure-u-1-2" id="outA"></h3>
+        <button class="pure-u-10-24 pure-button" id="outA+"><b>+1</b></button>
+        <div class="pure-u-1-12"></div>
+        <button class="pure-u-10-24 pure-button" id="outA-"><b>-1</b></button>
+        <div class="pure-u-1"></div>
+      </div>
+      
+      <div class="pure-u-1-24"></div>
+      
+      <div class="pure-u-8-24 maindiv">
+        <h2 class="pure-u-1">Children</h2>
+        <h3 class="pure-u-1-3">Dine in:</h3>
+        <h3 class="pure-u-1-2" id="inC"></h3>
+        <button class="pure-u-10-24 pure-button" id="inC+"><b>+1</b></button>
+        <div class="pure-u-1-12"></div>
+        <button class="pure-u-10-24 pure-button" id="inC-"><b>-1</b></button>
+        <h3 class="pure-u-1-3">Take out:</h3>
+        <h3 class="pure-u-1-2" id="outC"></h3>
+        <button class="pure-u-10-24 pure-button" id="outC+"><b>+1</b></button>
+        <div class="pure-u-1-12"></div>
+        <button class="pure-u-10-24 pure-button" id="outC-"><b>-1</b></button>
+        <div class="pure-u-1"></div>
+      </div>
+      
+      <div class="pure-u-1"><br /><br /></div>
+      <div class="pure-u-1">
+        <div class="pure-u-3-24"></div>
+        <button class="pure-u-5-24 pure-button" id="show"><b>Show Totals</b></button>
+        <div class="pure-u-1-24"></div>
+        <button class="pure-u-5-24 pure-button" id="hide"><b>Hide Totals</b></button>
+        <div class="pure-u-1-24"></div>
+        <button class="pure-u-5-24 pure-button" id="ccookies"><b>Clear Values</b></button>
+      </div>
+      
+      <div class="pure-u-3-24"></div>
+      <div class="pure-u-20-24" id="totals">
+        <div class="pure-u-1">
+          <h2 class="pure-u-1-3">TOTAL:</h2>
+          <h2 class="pure-u-1-3" id="total"></h2>
+        </div>
+        <div class="pure-u-1">
+          <h3 class="pure-u-1-5">Total Adults:</h3>
+          <h3 class="pure-u-1-5" id="totalA"></h3>
+          <h3 class="pure-u-1-5">Total Dine In:</h3>
+          <h3 class="pure-u-1-5" id="totalI"></h3>
+        </div>
+        <div class="pure-u-1">
+          <h3 class="pure-u-1-5">Total Children:</h3>
+          <h3 class="pure-u-1-5" id="totalC"></h3>
+          <h3 class="pure-u-1-5">Total Take Out:</h3>
+          <h3 class="pure-u-1-5" id="totalO"></h3>
+        </div>
+      </div>
+    </div>
+    
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Taco Feed Ticket Sales</title>
+    
+    <meta charset="utf-8" />
+    <meta name="author" content="Steven Habroun"/>
+    <meta name="description" content="Ticket Sales" />
+    
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="pure-release-0.6.0/pure-min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+  </head>
+  <body>
+    <img id="back" alt="BackgroundImage" src="BackgroundImage2.jpg" />
+    <div class="pure-g">
+      <p class="pure-u-1" style="padding-top:14%;margin:0"></p>
+      <h1 class="pure-u-1">Taco Feed Ticket Sales</h1>
+      <div class="pure-u-3-24"></div>
+      <div class="pure-u-18-24 maindiv">
+        <div class="pure-u-1-4">
+          <h2 class="pure-u-3-4">Adults</h2>
+          <h2 class="pure-u-3-24" id="cAdult"></h2>
+          <button class="pure-u-20-24 pure-button" id="Ap"><b>+1</b></button>
+          <br /><br />
+          <button class="pure-u-20-24 pure-button" id="Am"><b>-1</b></button>
+        </div>
+        <div class="pure-u-1-4">
+          <h2 class="pure-u-3-4">Children</h2>
+          <h2 class="pure-u-3-24" id="cChild"></h2>
+          <button class="pure-u-20-24 pure-button" id="Cp"><b>+1</b></button>
+          <br /><br />
+          <button class="pure-u-20-24 pure-button" id="Cm"><b>-1</b></button>
+        </div>
+        <form class="pure-u-1-4 pure-form" id="rButton">
+          <h2 class="pure-u-1">Received</h2>
+          <input type="number"
+                 class="pure-u-20-24"
+                 placeholder="0"
+                 id="received">
+          <br /><br />
+          <button class="pure-button pure-u-20-24"><b>Go</b></button>
+        </form>
+        <div class="pure-u-5-24">
+          <h2 class="pure-u-1">Total</h2>
+          <h3 class="pure-u-1" id="cTotal"></h3>
+          <button class="pure-u-1 pure-button" id="Keep" ><b>Keep Change</b></button>
+        </div>
+        <br /><br />
+        <div class="pure-u-7-24"></div>
+        <button class="pure-button pure-button-primary pure-u-1-3" id="clear"><b>Next</b></button>
+        <div class="pure-u-7-24"></div>
+        <div class="pure-u-1"></div>
+      </div>
+      
+      
+      
+      
+      
+      <div class="pure-u-1"><br /></div>
+      <div class="pure-u-3-24"></div>
+      <div class="pure-u-18-24 maindiv">
+        <div class="pure-u-1-4">
+          <h2 class="pure-u-1">Donations</h2>
+        </div>
+        <form id="dButton" class="pure-u-2-3 pure-form">
+          <div class="pure-u-1"></div>
+          <input type="number"
+                 class="pure-u-11-24"
+                 placeholder="0"
+                 id="donations"/>
+          <div class="pure-u-1-24"></div>
+          <button type="submit" class="pure-u-11-24 pure-button" id="DButton"><b>Enter</b></button>
+        </form>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="pure-u-1"><br /><br /></div>
+      <div class="pure-u-3-24"></div>
+      <div class="pure-u-18-24">
+        <button class="pure-u-7-24 pure-button" id="show"><b>Show Totals</b></button>
+        <div class="pure-u-1-24"></div>
+        <button class="pure-u-7-24 pure-button" id="hide"><b>Hide Totals</b></button>
+        <div class="pure-u-1-24"></div>
+        <button class="pure-u-7-24 pure-button" id="ccookies"><b>Clear Values</b></button>
+      </div>
+      
+      <div class="pure-u-1"></div>
+      <div class="pure-u-3-24"></div>
+      <div class="pure-u-21-24" id="totals">
+        <div class="pure-u-1">
+          <h3 class="pure-u-1-4">Total Adults:</h3>
+          <h3 class="pure-u-1-4" id="totalA"></h3>
+        </div>
+        <div class="pure-u-1">
+          <h3 class="pure-u-1-4">Total Children:</h3>
+          <h3 class="pure-u-1-4" id="totalC"></h3>
+        </div>
+        <div class="pure-u-1">
+          <h3 class="pure-u-1-4">Total Tickets:</h3>
+          <h3 class="pure-u-1-4" id="totalT"></h3>
+        </div>
+        <div class="pure-u-1">
+          <h3 class="pure-u-1-4">Total Ticket Revenue:</h3>
+          <h3 class="pure-u-1-4" id="totalR"></h3>
+        </div>
+        <div class="pure-u-1">
+          <h3 class="pure-u-1-4">Total Donations:</h3>
+          <h3 class="pure-u-1-4" id="totalD"></h3>
+        </div>
+        <div class="pure-u-1">
+          <h2 class="pure-u-1-4">TOTAL RAISED:</h2>
+          <h2 class="pure-u-1-4" id="total"></h2>
+        </div>
+      </div>
+    </div>
+    
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
