@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  var fontsize = window.innerWidth/850;
+  fontsize = String(fontsize) + "em";
+  $("body").css("font-size", fontsize);
   DisplayTotals();
   checkCookie("CurrentAdults")
   checkCookie("CurrentChildren");
