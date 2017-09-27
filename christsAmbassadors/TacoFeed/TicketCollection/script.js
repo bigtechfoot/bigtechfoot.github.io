@@ -1,7 +1,10 @@
 $(document).ready(function() {
+  var fontsize = window.innerWidth/750;
+  fontsize = String(fontsize) + "em";
+  $("body").css("font-size", fontsize);
   DisplayTotals();
   $("#totals").hide();
-  checkCookie("AdultsDineIn")
+  checkCookie("AdultsDineIn");
   checkCookie("AdultsDineOut");
   checkCookie("ChildrenDineIn");
   checkCookie("ChildrenDineOut");
