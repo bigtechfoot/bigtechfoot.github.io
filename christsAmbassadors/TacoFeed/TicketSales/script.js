@@ -1,7 +1,5 @@
 $(document).ready(function() {
-  var fontsize = window.innerWidth/850;
-  fontsize = String(fontsize) + "em";
-  $("body").css("font-size", fontsize);
+  SetSize();
   DisplayTotals();
   checkCookie("CurrentAdults")
   checkCookie("CurrentChildren");
@@ -16,6 +14,18 @@ $(document).ready(function() {
   checkCookie("Total");
   $("#totals").hide();
 });
+
+$(window).resize(function () {
+  SetSize();
+});
+
+function SetSize() {
+  var fontsize = window.innerWidth/850;
+  fontsize = String(fontsize) + "em";
+  $("body").css("font-size", fontsize);
+  $("#back").css("height", window.innerWidth*11/8.5);
+  $("#top-bar").css("padding-bottom", "10%");
+}
 
 function DisplayTotals() {
   $("#cAdult").text(getCookie("CurrentAdults"));

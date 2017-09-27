@@ -1,7 +1,11 @@
 #back {
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: -1;
+}
+#top-bar {
+  padding-bottom: 0%;
+  margin-bottom: 0;
 }
 h1, h2 {
   text-align:center;
@@ -14,4 +18,12 @@ h1, h2 {
 
 #cTotal {
   text-align: center;
+}
+
+#download {
+  position:absolute;
+  margin-left: 2%;
+  margin-top: 4%;
+  border: solid black 1px;
+  border-radius: 3px;
 }

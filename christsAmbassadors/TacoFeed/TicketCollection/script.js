@@ -1,7 +1,5 @@
 $(document).ready(function() {
-  var fontsize = window.innerWidth/750;
-  fontsize = String(fontsize) + "em";
-  $("body").css("font-size", fontsize);
+  SetSize();
   DisplayTotals();
   $("#totals").hide();
   checkCookie("AdultsDineIn");
@@ -14,6 +12,18 @@ $(document).ready(function() {
   checkCookie("TotalDineOut");
   checkCookie("TotalTotal");
 });
+
+$(window).resize(function () {
+  SetSize();
+});
+
+function SetSize() {
+  var fontsize = window.innerWidth/750;
+  fontsize = String(fontsize) + "em";
+  $("body").css("font-size", fontsize);
+  $("#back").css("height", window.innerWidth*11/8.5);
+  $("#top-bar").css("padding-bottom", "14%");
+}
 
 function DisplayTotals() {
   $("#inA").text(getCookie("AdultsDineIn"));
