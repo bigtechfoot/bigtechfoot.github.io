@@ -12,11 +12,21 @@ h1 {
   padding-top: 60%;
 }
 
-.page {
+.page1 {
   width: 40%;
   padding-top: 50%;
   position: absolute;
   left: 5%;
+  top: 10%;
+  background: white;
+  border: solid grey 1px;
+}
+
+.page2 {
+  width: 40%;
+  padding-top: 50%;
+  position: absolute;
+  left: 55%;
   top: 10%;
   background: white;
   border: solid grey 1px;
@@ -28,6 +38,10 @@ h1 {
   left:10%;
   right:10%;
   bottom:5%;
+}
+
+.maindiv {
+  margin-left:-14%
 }
 
 h2 {
